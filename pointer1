@@ -1,0 +1,25 @@
+//POINTER TO POINTER
+#include<stdio.h>
+void main()
+{
+int a=10;
+int *p;
+int**ptr;
+p=&a;
+ptr=&p;
+printf("the value a:%d\n",a);
+printf("the value *p :%d\n",*p);
+printf("the value **ptr:%d\n",**ptr);
+printf("the value *(&a) :%d\n",*(&a));
+printf("the value &p :%d\n",&p);
+printf("the value &ptr :%d\n",&ptr);
+printf("the value *(&ptr) :%d\n",*(&ptr));
+}
+OUTPUT:
+the value a:10
+the value *p :10
+the value **ptr:10
+the value *(&a) :10
+the value &p :-1077214856
+the value &ptr :-1077214860
+the value *(&ptr) :-1077214856
